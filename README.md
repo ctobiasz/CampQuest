@@ -1,7 +1,7 @@
-## YELPCAMP
+# YELPCAMP
 
-# This Project is using Node/Express
-# More will come soon
+### This Project is using Node/Express
+### More will come soon
 
 
-#Stay tuned!
+## Stay tuned!
