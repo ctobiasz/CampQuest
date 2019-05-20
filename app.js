@@ -9,8 +9,7 @@ var express        = require("express"),
     Campground     = require("./models/campground"),
     Comment        = require("./models/comment"),
     User           = require("./models/user"),
-    seedDB         = require("./seeds"),
-    MongoClient = require('mongodb').MongoClient;
+    seedDB         = require("./seeds");
 
 //requiring routes
 var commentRoutes     = require("./routes/comments"),
@@ -19,25 +18,12 @@ var commentRoutes     = require("./routes/comments"),
 
 
 
-
-
-    const uri = "mongodb+srv://psycho:psycho@cluster0-evm63.mongodb.net/test?retryWrites=true";
-    const client = new MongoClient(uri, { useNewUrlParser: true });
-    client.connect(err => {
-      const collection = client.db("test").collection("devices");
-      // perform actions on the collection object
-      client.close();
-    });
-
-
-
-
 // mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
-// mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useCreateIndex: true}).then(() => {
-//   console.log('connected to DB');
-// }).catch(err => {
-//   console.log('ERROR', err.message);
-// });
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useCreateIndex: true}).then(() => {
+  console.log('connected to DB');
+}).catch(err => {
+  console.log('ERROR', err.message);
+});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
