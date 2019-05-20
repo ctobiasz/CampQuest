@@ -18,7 +18,8 @@ var commentRoutes     = require("./routes/comments"),
 
 
 
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+// mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://psycho:psycho@cluster0-evm63.mongodb.net/test?retryWrites=true", {useNewUrlParser: true});
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
