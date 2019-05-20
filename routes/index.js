@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
 
 //show register form
 router.get("/register", (req,res)=>{
-  res.render("register");
+  res.render("register", {page: 'register'});
 });
 
 //handle sign up logic
@@ -19,10 +19,10 @@ router.post("/register", (req,res)=> {
   User.register(newUser, req.body.password, function(err, user){
     if(err){
       req.flash("error", err.message);
-      return res.render("register");
+      return res.render("register", {error: err.message});
     }
     passport.authenticate("local")(req, res, function(){
-      req.flash("success", "Welcome to CampFire " + user.username);
+      req.flash("success", "Successfully Signed Up! Welcome to CampQuest " + user.username);
       res.redirect("/campgrounds");
     });
   });
@@ -30,7 +30,7 @@ router.post("/register", (req,res)=> {
 
 //show login form
 router.get("/login", (req,res)=>{
-  res.render("login");
+  res.render("login", {page: 'login'});
 });
 
 // handling login logic

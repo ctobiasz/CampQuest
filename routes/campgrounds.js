@@ -3,14 +3,14 @@ var router  = express.Router();
 var Campground = require("../models/campground");
 var middleware = require("../middleware");
 
-
+//INDEX - show all campgrounds
 router.get("/", (req,res ) => {
   // Get all campgrounds from DB
    Campground.find({}, function(err, allCampgrounds){
      if(err){
        console.log(err);
      } else {
-       res.render("campgrounds/index", {campgrounds:allCampgrounds});
+       res.render("campgrounds/index", {campgrounds:allCampgrounds, pages: 'campgrounds'});
      }
    });
 });
