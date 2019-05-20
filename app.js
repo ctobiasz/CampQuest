@@ -21,7 +21,7 @@ var commentRoutes     = require("./routes/comments"),
 
 
 
-    const uri = "mongodb+srv://psycho:<password>@cluster0-evm63.mongodb.net/test?retryWrites=true";
+    const uri = "mongodb+srv://psycho:psycho@cluster0-evm63.mongodb.net/test?retryWrites=true";
     const client = new MongoClient(uri, { useNewUrlParser: true });
     client.connect(err => {
       const collection = client.db("test").collection("devices");
