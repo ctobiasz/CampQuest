@@ -17,7 +17,9 @@ var commentRoutes     = require("./routes/comments"),
     indexRoutes       = require("./routes/index");
 
 
-mongoose.connect("mongodb://localhost:27017/camp_fire", {useNewUrlParser: true});
+
+mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
@@ -50,7 +52,7 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 
 
 app.listen(process.env.PORT, process.env.IP, () => {
-  console.log("The CampFire Has Started!")
+  console.log("The CampQuest Has Started!")
 });
 
 app.listen(3000,  () => {
