@@ -19,7 +19,7 @@ var commentRoutes     = require("./routes/comments"),
 
 
 // mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
-mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true, useCreateIndex: true}).then(() => {
+mongoose.connect(process.env.HEROKUDBURL, {useNewUrlParser: true, useCreateIndex: true}).then(() => {
   console.log('connected to DB');
 }).catch(err => {
   console.log('ERROR', err.message);
@@ -59,6 +59,7 @@ app.use("/campgrounds/:id/comments", commentRoutes);
 app.listen(process.env.PORT, process.env.IP, () => {
   console.log("The CampQuest Has Started!")
 });
+
 //
 // app.listen(3000,  () => {
 // console.log("Express server listening on port 3000");
