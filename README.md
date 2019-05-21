@@ -20,3 +20,5 @@ in terms of price, location, description and post an image.
 
 ## Short Glance
 ![](https://giant.gfycat.com/BruisedWhichEarthworm.gif)
+
+or simply press [HERE](https://giant.gfycat.com/BruisedWhichEarthworm.webm) for the video in the browser.
