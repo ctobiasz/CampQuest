@@ -15,8 +15,8 @@ in terms of price, location, description and post an image.
 4) [Passport.js](http://www.passportjs.org/)                           (A simple middleware authentication for NodeJS)
 5) [body-parser](https://github.com/expressjs/body-parser)             (middleware that parses html body)
 6) [method-override](https://github.com/expressjs/method-override)     (Allows the use of PUT or DELETE in places where the client doesn't support it)
-7) [connect-flash](https://github.com/jaredhanson/connect-flash)       (Flash messages middleware)
+7) [connect-flash](https://github.com/jaredhanson/connect-flash)       (Flash message middleware)
 8) [Bootstrap](https://getbootstrap.com/)                              (CSS framework)
 
 ## Short Glance
-![](https://drive.google.com/file/d/1hqam7yl6zS-J6Gv6rNfVckD1m-XkBusv/view)
+![](https://giant.gfycat.com/BruisedWhichEarthworm.gif)
