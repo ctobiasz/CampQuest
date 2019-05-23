@@ -17,13 +17,13 @@ var commentRoutes     = require("./routes/comments"),
     indexRoutes       = require("./routes/index");
 
 
-// mongoose.connect("mongodb://localhost/camp_fire", { useNewUrlParser: true })
+mongoose.connect("mongodb://localhost/camp_fire", { useNewUrlParser: true })
 // mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
-mongoose.connect(process.env.HEROKUDBURL, {useNewUrlParser: true, useCreateIndex: true}).then(() => {
-  console.log('connected to DB');
-}).catch(err => {
-  console.log('ERROR', err.message);
-});
+// mongoose.connect(process.env.HEROKUDBURL, {useNewUrlParser: true, useCreateIndex: true}).then(() => {
+//   console.log('connected to DB');
+// }).catch(err => {
+//   console.log('ERROR', err.message);
+// });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
@@ -61,6 +61,6 @@ app.listen(process.env.PORT, process.env.IP, () => {
 });
 
 
-// app.listen(3000,  () => {
-// console.log("Express server listening on port 3000");
-// });
+app.listen(3000,  () => {
+console.log("Express server listening on port 3000");
+});
