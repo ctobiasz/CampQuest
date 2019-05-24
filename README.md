@@ -19,6 +19,6 @@ in terms of price, location, description and post an image.
 8) [Bootstrap 4](https://getbootstrap.com/)                            (CSS framework)
 
 ## Short Glance
-![](https://giant.gfycat.com/specificfinecony..gif)
+![](https://giant.gfycat.com/SpecificFineCony.gif)
 
-or simply press [HERE](https://giant.gfycat.com/specificfinecony.webm) for the video in the browser.
+or simply press [HERE](https://giant.gfycat.com/SpecificFineCony.webm) for the video in the browser.
