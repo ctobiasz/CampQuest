@@ -10,7 +10,7 @@
           <p class="float-right">$<%= campground.cost %> /night</p>
           <h5 class="card-title"><%=campground.name %></h5>
           <p>
-            <em>Submitted By <%= campground.author.username %></em>
+            <em>Submitted By <%= campground.author.username %>, <%= moment(campground.createdAt).fromNow() %></em>
           </p>
           <hr>
           <p class="card-text"><%= campground.description %></p>
@@ -38,7 +38,7 @@
                     <p class="card-text"><%= comment.text %></p>
                   </div>
                   <div class="float-right">
-                    <!-- <p>Data Not Available</p> -->
+                    <p><%= moment(comment.createdAt).fromNow() %></p>
 
                     <% if(currentUser && comment.author.id.equals(currentUser._id)){ %>
                      <div class="float-right">

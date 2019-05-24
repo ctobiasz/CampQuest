@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 
 //SCHEME SETUP
-
 var campgroundSchema = new mongoose.Schema({
   name: String,
   image: String,
@@ -10,6 +9,7 @@ var campgroundSchema = new mongoose.Schema({
   location: String,
   lat: Number,
   lng: Number,
+  createdAt: { type: Date, default: Date.now },
   author: {
     id: {
       type: mongoose.Schema.Types.ObjectId,
