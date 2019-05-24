@@ -16,9 +16,9 @@ in terms of price, location, description and post an image.
 5) [body-parser](https://github.com/expressjs/body-parser)             (middleware that parses html body)
 6) [method-override](https://github.com/expressjs/method-override)     (Allows the use of PUT or DELETE in places where the client doesn't support it)
 7) [connect-flash](https://github.com/jaredhanson/connect-flash)       (Flash message middleware)
-8) [Bootstrap](https://getbootstrap.com/)                              (CSS framework)
+8) [Bootstrap 4](https://getbootstrap.com/)                            (CSS framework)
 
 ## Short Glance
-![](https://giant.gfycat.com/BruisedWhichEarthworm.gif)
+![](https://giant.gfycat.com/specificfinecony..gif)
 
-or simply press [HERE](https://giant.gfycat.com/BruisedWhichEarthworm.webm) for the video in the browser.
+or simply press [HERE](https://giant.gfycat.com/specificfinecony.webm) for the video in the browser.
