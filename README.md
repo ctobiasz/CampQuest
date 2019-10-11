@@ -20,5 +20,3 @@ in terms of price, location, description and post an image.
 
 ## Short Glance
 ![](https://giant.gfycat.com/SpecificFineCony.gif)
-
-or simply press [HERE](https://giant.gfycat.com/SpecificFineCony.webm) for the video in the browser.
